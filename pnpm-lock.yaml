@@ -18,6 +18,7 @@ specifiers:
   jest-environment-jsdom: ^27.5.1
   postcss: ^8.4.12
   prettier: ^2.6.2
+  prettier-plugin-tailwindcss: ^0.1.10
   tailwindcss: ^3.0.24
   typescript: ^4.5.4
   vite: ^2.9.5
@@ -29,6 +30,7 @@ specifiers:
 
 dependencies:
   vue: 3.2.33
+  vue-router: 4.0.13_vue@3.2.33
 
 devDependencies:
   '@types/jest': 27.4.1
@@ -48,12 +50,12 @@ devDependencies:
   jest-environment-jsdom: 27.5.1
   postcss: 8.4.12
   prettier: 2.6.2
+  prettier-plugin-tailwindcss: 0.1.10_prettier@2.6.2
   tailwindcss: 3.0.24
   typescript: 4.6.3
   vite: 2.9.5
   vite-jest: 0.1.4_jest@27.5.1+vite@2.9.5
   vite-plugin-eslint: 1.5.2_eslint@8.13.0+vite@2.9.5
-  vue-router: 4.0.13_vue@3.2.33
   vue-tsc: 0.34.9_typescript@4.6.3
 
 packages:
@@ -1392,7 +1394,7 @@ packages:
       {
         integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==
       }
-    dev: true
+    dev: false
 
   /@vue/reactivity-transform/3.2.33:
     resolution:
@@ -4579,6 +4581,18 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
+  /prettier-plugin-tailwindcss/0.1.10_prettier@2.6.2:
+    resolution:
+      {
+        integrity: sha512-ooDGNuXUjgCXfShliVYQ6+0iXqUFXn+zdNInPe0WZN9qINt9srbLGFGY5jeVL4MXtY20/4S8JaBcd8l6N6NfCQ==
+      }
+    engines: { node: '>=12.17.0' }
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.6.2
+    dev: true
+
   /prettier/2.6.2:
     resolution:
       {
@@ -5342,7 +5356,7 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.1.4
       vue: 3.2.33
-    dev: true
+    dev: false
 
   /vue-tsc/0.34.9_typescript@4.6.3:
     resolution:
